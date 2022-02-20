@@ -8,12 +8,6 @@ function Typing(props) {
   const [reverse, setReverse] = useState(false);
 
   useEffect(() => {
-    if (index === props.words.length - 1 && subIndex === 0 && reverse) {
-      setIndex(0);
-      setReverse(false);
-      return;
-    }
-
     if (subIndex === props.words[index].length + 1 && !reverse) {
       setReverse(true);
       return;
@@ -21,13 +15,17 @@ function Typing(props) {
 
     if (subIndex === 0 && reverse) {
       setReverse(false);
-      setIndex((prev) => prev + 1);
+      if (index === props.words.length - 1) {
+        setIndex(0);
+      } else {
+        setIndex((prev) => prev + 1);
+      }
       return;
     }
 
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, 200);
+    }, 130);
 
     return () => clearTimeout(timeout);
   }, [subIndex, index, reverse]);
