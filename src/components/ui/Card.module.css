@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+  background-color: rgba(45, 39, 75, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #b9bed3;
+  width: 80%;
+  height: 74vh;
+  text-align: center;
+}
