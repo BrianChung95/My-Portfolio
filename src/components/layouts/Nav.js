@@ -43,14 +43,14 @@ function Nav() {
               Projects
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/courses"
               className={url === "/courses" ? classes.active : ""}
             >
               Courses
             </Link>
-          </li>
+          </li> */}
           {/* <li>
             <Link
               to="/newitems"
