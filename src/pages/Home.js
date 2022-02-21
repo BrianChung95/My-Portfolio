@@ -2,7 +2,7 @@ import Typing from "../components/Effect/Typing";
 import ProfilePic from "../components/ui/ProfilePic";
 import classes from "./css/Home.module.css";
 
-const words = ["Web Developer", "Software Developer"];
+const words = ["Web Developer", "Software Developer", "Problem Solver"];
 
 function Home() {
   return (
