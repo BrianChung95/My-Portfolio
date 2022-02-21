@@ -1,0 +1,10 @@
+.profile_pic {
+  border-radius: 50%;
+  width: 45%;
+  margin-bottom: 30px;
+  border: white solid 3px;
+}
+
+.content {
+  margin: 3px 0;
+}

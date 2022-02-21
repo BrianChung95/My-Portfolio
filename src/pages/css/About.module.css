@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(14, 7%);
+}
+
+.profile {
+  grid-column: 2 / span 6;
+}
+
+.introduction {
+  grid-column: 8 / span 7;
+  align-self: center;
+}
