@@ -1,14 +1,16 @@
 import Typing from "../components/Effect/Typing";
 import ProfilePic from "../components/ui/ProfilePic";
+import classes from "./css/Home.module.css";
+
 const words = ["Web Developer", "Software Developer"];
 
 function Home() {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(14, 7%" }}>
+    <div className={classes.container}>
       <ProfilePic img="imgs/ProfilePic.jpg" />
-      <div style={{ gridColumn: "8/span4", alignSelf: "center" }}>
+      <div className={classes.texts}>
         <h1>Hi, I'm Bingting (Brian) Zhong</h1>
-        <h1 style={{ margin: "20px 0" }}>
+        <h1 className={classes.text}>
           Currently a term 2 CST student from BCIT
         </h1>
         <Typing words={words} />

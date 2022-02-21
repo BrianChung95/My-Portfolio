@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(14, 7%);
+}
+
+.texts {
+  grid-column: 8 / span4;
+  align-self: center;
+}
+
+.text {
+  margin: 20px 0;
+}

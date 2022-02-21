@@ -28,6 +28,7 @@ function Typing(props) {
     }, 130);
 
     return () => clearTimeout(timeout);
+    // eslint-disable-next-line
   }, [subIndex, index, reverse]);
 
   useEffect(() => {
