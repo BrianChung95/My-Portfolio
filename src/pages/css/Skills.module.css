@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(14, 7%);
+}
+
+.texts {
+  grid-column: 2 / span 6;
+}
+
+.graph {
+  grid-column: 9 / span 6;
+}
+
+.graph > div {
+  margin: 0 0 13px 0;
+}
+
+.skillList {
+  font-size: 1.2em;
+}
+
+.skill {
+  margin: 12px 0;
+}
+
+.skill::marker {
+  color: white;
+  font-size: 1.2em;
+}
