@@ -11,7 +11,7 @@ function Home() {
       <div className={classes.texts}>
         <h1>Hi, I'm Bingting (Brian) Zhong</h1>
         <h1 className={classes.text}>
-          Currently a term 2 CST student from BCIT
+          Currently a Term 2 CST student from BCIT
         </h1>
         <Typing words={words} />
       </div>
